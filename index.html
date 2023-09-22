@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title>Projeto Flavio</title>
+
+    <style>
+*{
+    margin: 0px;
+    padding: 15px;
+}
+        body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+    background: linear-gradient(to bottom, #272829, #61677A, #D8D9DA, #FFF6E0);
+}
+
+        .tab {
+            background-color: #f1f1f1;
+            border: 1px solid #ccc;
+            border-bottom:  none;
+            border-radius: 5px 5px 0 0;
+            overflow: auto;
+            padding: 5px;
+        }
+        
+        .tab button {
+            background-color: #f1f1f1;
+            border: none;
+            outline: none;
+            border-radius: 5px 5px 0 0;
+            cursor: pointer;
+            padding: 10px 16px;
+            font-weight: bold;
+            color: #333;
+            margin: 3px 2px 0 2px;
+            float: left
+        }
+
+        .tab button:hover {
+            background-color: #fbfbfb;
+        }
+
+        .tab button.ativo {
+            background-color: white;
+            color: #008cff;
+        }
+
+        .conteudo {
+            border: 1px solid #ccc;
+            border-top: none;
+            padding: 6px 12px 1000px;
+            display: none;
+            background-color: white;
+            
+        }
+        
+
+        button{
+            font-size: 18px;
+        }
+
+        h3{
+            font-size: 80px;
+            text-align: center;
+        }
+
+        h1{
+            text-align: center;
+        }
+
+        div{
+            font-size: 35px;
+        }
+
+       #HT {
+        padding: 0px 0px 100px;
+       }
+
+       #CI{
+        padding: 0px 0px 80px;
+       }
+
+       #S{
+        padding: 0 0px 150px;
+       }
+       
+
+       #HTP{
+        padding: 0 0 50px;
+       } 
+
+       img{
+    position: relative;
+    width: 800px;
+    height: 500px;
+    left: 500px;
+  }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="tab">
+        <button id="tabPadrao" class="tab-button" onclick="abrirTab(event,'HT')">HT</button>
+        <button class="tab-button" onclick="abrirTab(event,'CI')">produções de Hts</button>
+        <button class="tab-button" onclick="abrirTab(event,'S')">Soluções</button>
+        <button class="tab-button" onclick="abrirTab(event,'HTP')">Exemplos</button>
+    </div>
+
+    <div id="HT" class="conteudo">
+        <h3>Como funciona um HT</h3>
+        <img src="https://b3069131.smushcdn.com/3069131/wp-content/uploads/2020/06/Depositphotos_273797574_xl-2015_SHEATH_1200.jpg?lossy=1&strip=1&webp=1">
+        <p>Qualquer dispositivo que contenha circuito integrado (Chips) está sujeito a um ataque cibernético. 
+            Todos os nossos dispositivos, tanto quando computadores, celulares equipamentos de rede computacionais, todos contém um Chip, eles concentram boa parte da “inteligência” dos equipamentos, ou seja, qualquer erro dentro dele, pode afetar bastante a sua máquina ou o sistema operacional dela. 
+            As chances de implementar códigos maliciosos no hardwere está sendo estudada a alguns anos.         </p>
+            <p>Estudos revelam a possibilidade de Chips serem “intencionalmente comprometidos no meio processo de fabricação, antes mesmo de serem produzidos”. Apesar dos perigos que ele possa causar ao seu dispositivo,
+                encontra-lo não é uma tarefa fácil e a tecnologia e técnicas atuais não são suficientes para fazer essa função.</p>
+            <p>General Michael Hayden, chegou a declarar que a questão de hardware comprometido é um problema que não pode ser resolvido, mas uma situação que deve ser gerenciada.
+                Portanto entender a ameaça e impedi-la o quanto antes é uma necessidade e teremos que estudar e chegar em um meio de impedir ou prevenir esses possíveis ataques.</p>
+    </div>
+
+    <div id="CI" class="conteudo">
+        <h3>Como funciona a produção de HTS</h3>
+        <img src="https://proxy.olhardigital.com.br/wp-content/uploads/2020/12/shutterstock_248596792.jpg" width="800px">
+        <p>A inserção de um hardware trojan envolve modificar um dispositivo eletrônico, como um chip ou placa-mãe, durante sua fabricação. Isso é feito secretamente na cadeia de suprimentos, seja infiltrando-se em uma fábrica ou corrompendo funcionários. 
+            Os atacantes adicionam componentes maliciosos ou fazem modificações no hardware, tornando-o difícil de detectar. Eles podem testar o hardware trojan e, em seguida, distribuí-lo para o destino final, como uma organização. Uma vez em funcionamento, o hardware trojan pode coletar dados ou realizar ataques. 
+            Detectá-lo é difícil, e a segurança da cadeia de suprimentos e a análise de hardware são fundamentais para se proteger contra esse tipo de ameaça.</p>
+    </div>  
+
+    <div id="S" class="conteudo">
+        <h3>Possiveis soluções para o HT</h3>
+        <img src="https://www.hardware.com.br/wp-content/uploads/static/wp/2022/07/05/2.jpg">
+        <h1>Verificação mais rigorosa das empresas</h1>
+        <p>Implementar um controle rigoroso em toda a cadeia de suprimentos, desde a fabricação até a distribuição dos dispositivos, é essencial para garantir a integridade dos componentes eletrônicos.
+             Verificar a origem e a autenticidade dos componentes é um passo crucial.</p>
+        <h1>Análise de Hardware Independente</h1>
+        <p>Realizar análises independentes de hardware por parte de especialistas em segurança cibernética pode ajudar a identificar modificações não autorizadas ou anomalias no design físico dos dispositivos. 
+            Essa análise minuciosa é particularmente útil na detecção de hardware trojans.</p>
+         <h1>Autenticação e Assinatura Digital</h1>
+         <p>Implementar métodos de autenticação e assinatura digital pode ajudar a verificar a autenticidade dos componentes e do firmware.
+                 Componentes legítimos devem ser verificados por meio de chaves criptográficas antes de serem aceitos.</p>
+        <h1>Monitoramento de Integridade em Tempo Real</h1>
+        <p>Implementar sistemas de monitoramento de integridade que operam em tempo real pode detectar alterações no hardware ou firmware assim que elas ocorrem.
+                 Isso permite uma resposta imediata em caso de detecção de atividade suspeita.</p>
+    </div class="conteudo">
+
+    <div id="HTP" class="conteudo">
+        <h3>Exemplos de HT no mundo</h3>
+        <img src="https://gizmodo.uol.com.br/wp-content/blogs.dir/8/files/2016/04/bsod-940x530.jpg">
+        <h1>Caso Stuxnet</h1>
+        <p>Stuxnet foi um malware complexo que foi descoberto em 2010 e teve como alvo sistemas de controle industrial, principalmente no Irã. 
+            Ele continha um componente de hardware trojan que se infiltrou nas instalações nucleares iranianas, causando danos substanciais aos sistemas de centrifugação usados no enriquecimento de urânio.</p>
+         <h1>Chip Espião na Supermicro</h1>
+        <p>Em 2018, houve alegações de que componentes de hardware maliciosos, pequenos chips de espionagem, foram inseridos em placas-mãe produzidas pela Supermicro, uma grande fabricante de hardware de servidor. 
+            Esses chips supostamente tinham como objetivo coletar informações sensíveis de grandes empresas e agências governamentais dos EUA.</p>
+            <h1></h1>
+    </div>
+
+    <script>
+        document.getElementById('tabPadrao').click();
+
+
+        function abrirTab(event, idTab){
+            var conteudos = document.getElementsByClassName('conteudo');
+
+            for (var i = 0; i < conteudos.length; i++) {
+                conteudos[i].style = 'none';
+            }
+
+            var tabs = document.getElementsByClassName('tab-butto');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].className = tabs[i].className.replace('ativo', '');
+            }
+  
+           
+            document.getElementById(idTab).style.display = 'block';
+            event.currentTarget.className += 'ativo';
+        }
+
+    </script>
+
+</body>
+</html>
